@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="pt-br"><head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Central de Atendimento ao Cidadão - Realize consultas de forma rápida e segura com nossa plataforma.">
@@ -41,7 +43,7 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    .container {
+    .ca-container {
       text-align: center;
       background: #ffffff;
       border-radius: 16px;
@@ -49,15 +51,15 @@
       padding: 40px;
       max-width: 500px;
       width: 90%;
-      animation: fadeIn 1s ease-in-out;
+      animation: ca-fade-in 1s ease-in-out;
     }
 
-    @keyframes fadeIn {
+    @keyframes ca-fade-in {
       from { opacity: 0; transform: translateY(-20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    .title {
+    .ca-title {
       font-size: clamp(24px, 5vw, 28px);
       font-weight: 700;
       margin-bottom: 15px;
@@ -66,7 +68,7 @@
       line-height: 1.3;
     }
 
-    .subtitle {
+    .ca-subtitle {
       font-size: clamp(15px, 3.5vw, 16px);
       color: #555;
       margin-bottom: 30px;
@@ -74,7 +76,7 @@
       font-weight: 500;
     }
 
-    .button {
+    .ca-button {
       display: inline-block;
       background-color: #e80070;
       color: #ffffff;
@@ -90,16 +92,16 @@
       cursor: pointer;
     }
 
-    .button:hover {
+    .ca-button:hover {
       background-color: #e80070;
       transform: scale(1.03);
     }
 
-    .button:active {
+    .ca-button:active {
       transform: scale(0.98);
     }
 
-    .links {
+    .ca-links {
       margin-top: 25px;
       font-size: clamp(13px, 3vw, 14px);
       display: flex;
@@ -108,7 +110,7 @@
       gap: 12px;
     }
 
-    .links a {
+    .ca-links a {
       color: #e80070;
       text-decoration: none;
       transition: color 0.3s;
@@ -116,55 +118,54 @@
       white-space: nowrap;
     }
 
-    .links a:hover {
+    .ca-links a:hover {
       color: #e80070;
       text-decoration: underline;
     }
 
-    footer {
+    .ca-footer {
       margin-top: 30px;
       font-size: clamp(11px, 2.5vw, 12px);
       color: #777;
       line-height: 1.5;
     }
 
-    footer a {
+    .ca-footer a {
       color: #e80070;
       text-decoration: none;
       font-weight: 500;
     }
 
-    footer a:hover {
+    .ca-footer a:hover {
       color: #e80070;
     }
 
     @media (max-width: 400px) {
-      .container {
+      .ca-container {
         padding: 25px 20px;
       }
 
-      .links {
+      .ca-links {
         gap: 8px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1 class="title">CONSULTAR FACIL</h1>
-    <p class="subtitle">Clique no botão abaixo para acessar serviços públicos de forma rápida e segura.</p>
-    <a class="button" href="https://srfexperian.com/feirao/cpf/cpf.html">
+  <div class="ca-container">
+    <h1 class="ca-title">CONSULTAR FACIL</h1>
+    <p class="ca-subtitle">Clique no botão abaixo para acessar serviços públicos de forma rápida e segura.</p>
+    <a class="ca-button" href="seu link">
       <i class="fas fa-comments"></i> CONSULTAR AGORA
     </a>
-    <div class="links">
+    <div class="ca-links">
       <a href="politicas"><i class="fas fa-shield-alt"></i> Política de Privacidade</a>
       <a href="termos"><i class="fas fa-file-alt"></i> Termos de Uso</a>
       <a href="servicos"><i class="fas fa-cogs"></i> Serviços</a>
     </div>
-    <footer>
+    <footer class="ca-footer">
       © 2025 Consultar Facil Brasil. Todos os direitos reservados. <a href="servicos">Contato</a>
     </footer>
   </div>
-
-
-</body></html>
+</body>
+</html>
